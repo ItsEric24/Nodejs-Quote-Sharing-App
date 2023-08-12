@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for Node.js dependencies
+node_modules/
+
+# Dependency directories
+jspm_packages/
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Build output
+build/
+dist/
+
+
+# Mac OS files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Compiled binary addons
+*.node

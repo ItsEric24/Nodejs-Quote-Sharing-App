@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    <div class="create">
+      <h2>Write a quote</h2>  
+      <form action="/quotes" method="POST">
+        <label for="create-quote">Quote:</label>
+        <textarea name="quote" id="create-quote" type="text" class="input-field" required></textarea>
+        <label for="author">Author/Unknown:</label>
+        <input id="author" name="author" type="text" class="input-field" required/>
+        <button type="submit" class="create-btn">Submit</button>
+      </form>
+    </div>
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

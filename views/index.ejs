@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs")%>
+    <h1 class="home-title">All quotes</h1>
+    <div class="quotes">
+      <% quotes.forEach((quote)=>{ %>
+      <div class="single-quote">
+        <h3>"<%= quote.quote %>"</h3>
+        <p class="author">~ <%= quote.author %></p>
+        <p class="date">CreatedAt: <%= quote.createdAt.toLocaleString() %></p>
+      </div>
+      <% }) %>
+    </div>
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>
